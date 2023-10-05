@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+:root{
+    --cinza-claro: #f5f5f5;
+    --cinza: #666666;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--cinza);
+    font-size: 14px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    background-color: var(--cinza-claro);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.6em 0;
+}
+.cabecalho__lista{
+    display: flex;
+    column-gap: 2em;
+}
+.cabecalho__lista-item{
+    display: flex;
+    column-gap: 0.5em;
+    align-items: center;
+}
+.destaque{
+    font-weight: 700;
+}
