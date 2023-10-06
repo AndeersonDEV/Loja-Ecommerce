@@ -6,11 +6,13 @@
     --azul-claro: #f3f9fb;
     --azul: #212844;
     --branco: #ffffff;
+    --azul-celeste: #008ecc;
 }
 body{
     font-family: 'Hanken Grotesk', sans-serif;
     color: var(--cinza);
     font-size: 14px;
+    box-sizing: border-box;
 }
 *{
     margin: 0;
@@ -77,22 +79,23 @@ body{
 
 }
 .categorias{
-  margin: 1em 0 1em 0;  
+  margin: 1em 1em 1em 1em;  
   border-bottom: 1px solid var(--cinza-linha);
 }
 .categorias__menu{
     display: flex;
     align-items: center;
-    column-gap: 2em;
+    column-gap: 0.5em;
+    margin: 0 5em;
     
-    margin: 0 120px;
+    
 }
 .categorias__menu-item{
     display: flex;
     background-color: var(--azul-claro);
     padding: 9px 14px;
     border-radius: 18px;
-    column-gap: 0.2em;
+    /* column-gap: 0.2em; */
     margin-bottom: 1em;
     
     
@@ -105,7 +108,7 @@ body{
     border-radius: 16px;
     justify-content: space-between;
     align-items: start;
-    padding: 22px 125px 22px 90px;
+    padding: 1em 2em 1em 2em;
     
     /* background: url("../assets/Group\ 16.png") no-repeat ; */
     ;
@@ -120,4 +123,37 @@ body{
     font-size: 63px;
     font-weight: 700;
     color: var(--branco);
+}
+.telefones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5em 5em;
+    border-bottom: 1px solid var(--cinza-linha);
+}
+.telefones__lista{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    
+    
+}
+.telefones__titulo{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cinza);
+    border-bottom: 2px solid var(--azul-celeste);
+}
+.destaque-telefones{
+    color: var(--azul-celeste);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 378px;
+    
+}
+.card__imagem{
+    width: 84px;
+    background-color: var(--cinza-linha);
 }
