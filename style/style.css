@@ -2,6 +2,10 @@
 :root{
     --cinza-claro: #f5f5f5;
     --cinza: #666666;
+    --cinza-linha: #ededed;
+    --azul-claro: #f3f9fb;
+    --azul: #212844;
+    --branco: #ffffff;
 }
 body{
     font-family: 'Hanken Grotesk', sans-serif;
@@ -29,4 +33,91 @@ body{
 }
 .destaque{
     font-weight: 700;
+}
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 21px 0;
+    border-bottom: 1px solid var(--cinza-linha);
+}
+.navegacao__lista-logo{
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+.navegacao__lista{
+    display: flex;
+    list-style: none;
+    column-gap: 0.6em;
+}
+.navegacao__lista-item{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    font-size: 16px;
+    font-weight: 700;
+}
+.navegacao__pesquisa{
+    width: 507px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: var(--azul-claro);
+    border: none;
+}
+.navegacao__pesquisa::placeholder{
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 400;
+    background: url("../assets/Search.png") no-repeat;
+    background-position: 1em;
+    text-align: left;
+    padding: 0 0 0 3em;
+
+}
+.categorias{
+  margin: 1em 0 1em 0;  
+  border-bottom: 1px solid var(--cinza-linha);
+}
+.categorias__menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+    
+    margin: 0 120px;
+}
+.categorias__menu-item{
+    display: flex;
+    background-color: var(--azul-claro);
+    padding: 9px 14px;
+    border-radius: 18px;
+    column-gap: 0.2em;
+    margin-bottom: 1em;
+    
+    
+}
+.carrosel{
+    margin: 0 120px 120px 120px;
+    display: flex;
+    width: 75%;
+    background-color: var(--azul);
+    border-radius: 16px;
+    justify-content: space-between;
+    align-items: start;
+    padding: 22px 125px 22px 90px;
+    
+    /* background: url("../assets/Group\ 16.png") no-repeat ; */
+    ;
+}
+
+.carrosel__subtitulo{
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: 600;
+}
+.carrosel__titulo{
+    font-size: 63px;
+    font-weight: 700;
+    color: var(--branco);
 }
